@@ -1,4 +1,5 @@
 # Informe de Desarrollo: Simulador Universal de Sistemas de Colas
+# GRUPO 12
 
 **Versión:** 1  
 **Asignatura:** Simulación  
