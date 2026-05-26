@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Colas Avanzado - Cátedra</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Menu Configuración -->
+    <nav id="menuSuperior">
+        <div class="panel-superior">
+            <div id="panelSistema" class="seccion-config">
+                <h3>Sistema Base</h3>
+            </div>
+            <div id="panelColas" class="seccion-config">
+                <h3>Colas (Llegadas y Abandono)</h3>
+            </div>
+            <div id="panelServidores" class="seccion-config">
+                <h3>Servidores (Servicio y Descanso)</h3>
+            </div>
+        </div>
+        
+        <!-- Controles -->
+        <div class="controles-ejecucion">
+            <button id="btnReiniciar">🔄 Aplicar y Construir Modelo</button>
+            <button id="btnPasoAPaso">⏭️ Siguiente Evento</button>
+            <button id="btnSimularTodo">⏩ Simular Todo el Intervalo</button>
+        </div>
+    </nav>
+    
+    <main>
+        <!-- Animación -->
+        <div class="contenedor-principal">
+            <canvas id="lienzoSimulacion" width="750" height="350"></canvas>
+            <div id="panelEstadisticas" class="panel-estadisticas">
+                <h3>Estadísticas en Vivo</h3>
+                <ul id="listaEstadisticas"></ul>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <div class="contenedor-tabla">
+            <table id="tablaResultados">
+                <thead id="cabeceraTabla"></thead>
+                <tbody id="cuerpoTabla"></tbody>
+            </table>
+        </div>
+    </main>
+    
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
